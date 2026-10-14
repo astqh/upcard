@@ -72,7 +72,7 @@ describe("basic strategy", () => {
 
 describe("simulation", () => {
   // The app's house-edge formula is an approximation and the sim plays a fixed-odds strategy table,
-  // so a long run sits about 0.1 pp above it. Sampling noise at 200k hands is about +-0.26 pp (1 sd),
+  // so a long run sits about 0.045 pp above it (20M hands: 0.36-0.37% vs 0.32%). Sampling noise at 200k hands is about +-0.26 pp (1 sd),
   // so the seed is fixed: the result is the same every run.
   const table = buildStrategyTable(RULES);
   const run = (rounds, seed) =>
