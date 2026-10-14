@@ -23,7 +23,7 @@ The site is fully static and deploys through Git integration (not Direct Upload,
 
 1. Push this repo to GitHub.
 2. In Cloudflare: **Workers & Pages > Create > Pages > Import an existing Git repository** (not "Upload assets"), and pick this repo.
-3. Project name `upcard`. Check the preview URL reads exactly `upcard.pages.dev` before saving; the name can't be changed later.
+3. Project name `upcards`. Check the preview URL reads exactly `upcards.pages.dev` before saving; the name can't be changed later.
 4. Production branch `main`, framework preset **Vite**, build command `npm run check`, output directory `dist`, root directory blank. Node is pinned by `.node-version`.
 5. Save and Deploy. Every push to `main` redeploys, and a failing unit test stops the deploy. Branches named `preview/*` get their own preview URLs.
 
