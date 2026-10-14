@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+*, *::before, *::after { box-sizing: border-box; }
+body { margin: 0; -webkit-font-smoothing: antialiased; }
+button:focus-visible, select:focus-visible, input:focus-visible { outline: 2px solid #c9a227; outline-offset: 2px; }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }

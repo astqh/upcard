@@ -1,0 +1,6 @@
+node_modules
+logs/
+upcard.zip
+dist
+.DS_Store
+*.log
