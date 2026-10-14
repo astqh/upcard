@@ -41,6 +41,7 @@ test("chips mode hides the play record until End session", async ({ page }) => {
   const end = page.getByRole("button", { name: "End session and see how I did" });
   for (let i = 0; i < 10 && !(await end.first().isVisible()); i++) {
     await playHandToEnd(page);
+    if (!(await end.first().isVisible())) await page.getByRole("button", { name: "Next hand" }).click();
   }
   await expect(end.first()).toBeVisible();
   await expect(page.getByText(/Hidden while you are playing for chips/)).toBeVisible();
